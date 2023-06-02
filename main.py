@@ -13,7 +13,8 @@ n = int(input("Enter the number of emails you sending :- "))
 for i in range(0, n):
     ele = input(f" [{i}] =>  ")
     listAdd.append(ele)
-ob.sendmail('enter login email', listAdd, msg)   
+
 print("\n Sending.....")
+ob.sendmail('enter login email', listAdd, msg)   
 print("\nMail Send Successfully!")
 ob.quit()
